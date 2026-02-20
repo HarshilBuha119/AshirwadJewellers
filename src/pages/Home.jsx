@@ -170,10 +170,10 @@ const Home = () => {
             zIndex: 10,
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "end",
             textAlign: "center",
             padding: "0 24px",
+            paddingBottom: "100px",
           }}
         >
           <motion.div
@@ -181,18 +181,6 @@ const Home = () => {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
           >
-            <span
-              style={{
-                color: "#C5A059",
-                letterSpacing: "0.4em",
-                textTransform: "uppercase",
-                fontSize: "10px",
-                marginBottom: "16px",
-                display: "block",
-              }}
-            >
-              Live Market Integrated
-            </span>
 
             <h1
               style={{
@@ -204,7 +192,7 @@ const Home = () => {
                 lineHeight: 1.2,
               }}
             >
-              {banners[currentBanner]?.festival_name || "Pure Brilliance"}
+              {banners[currentBanner]?.festival_name}
             </h1>
 
             <Link

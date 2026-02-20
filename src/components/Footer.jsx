@@ -99,10 +99,7 @@ const Footer = () => {
 
           <div className="flex items-center space-x-2 text-[#C5A059] opacity-80">
             <Sparkles size={14} />
-            <Link to="/extra" className="group px-12 py-4 hover:bg-[#C5A059] transition-all duration-500">
-              <span className="text-[9px] font-['Golden'] tracking-[0.3em] uppercase">BIS Hallmarked</span>
-            </Link>
-
+            <span className="text-[9px] font-['Golden'] tracking-[0.3em] uppercase">BIS Hallmarked</span>
           </div>
         </div>
       </div>
