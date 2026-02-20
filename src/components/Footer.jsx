@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <Link to="/" className="flex flex-col mb-8 group w-fit">
               <img
-                src="../../logo.png"   // put logo inside public folder
+                src="src/logo.png"   // put logo inside public folder
                 alt="Ashirwad Jewellers"
                 className="h-10 md:h-12 w-auto object-contain rounded-lg"
               />
