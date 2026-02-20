@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { cartAPI } from '../config/supabase';
 import toast from 'react-hot-toast';
+import logo from "../logo.png";
 
 const Navbar = () => {
   const { user, login, logout } = useAuth();
@@ -94,7 +95,7 @@ const Navbar = () => {
 
               {/* LOGO */}
               <img
-                src="https://res.cloudinary.com/ds3x2mbi3/image/upload/v1771587418/ChatGPT_Image_Jan_13_2026_10_53_11_AM_o2vm4k.png"   // put logo inside public folder
+                src={logo} // put logo inside public folder
                 alt="Ashirwad Jewellers"
                 className="h-10 md:h-12 w-auto object-contain rounded-full"
               />

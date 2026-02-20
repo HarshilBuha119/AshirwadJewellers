@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Crown, Instagram, Facebook, Twitter, MapPin, Phone, Mail, ArrowUpRight, Sparkles } from 'lucide-react';
-
+import logo from "../logo.png"
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -14,11 +14,10 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <Link to="/" className="flex flex-col mb-8 group w-fit">
               <img
-                src="https://res.cloudinary.com/ds3x2mbi3/image/upload/v1771587418/ChatGPT_Image_Jan_13_2026_10_53_11_AM_o2vm4k.png"   // put logo inside public folder
+                src={logo}   // put logo inside public folder
                 alt="Ashirwad Jewellers"
                 className="h-10 md:h-12 w-auto object-contain rounded-lg"
-              />
-              <h2 className="text-3xl font-['AnticDidone-Regular'] tracking-tight">
+              /><h2 className="text-3xl font-['AnticDidone-Regular'] tracking-tight">
                 Ashirwad <span className="italic font-light opacity-80">Jewellers</span>
               </h2>
               <p className="text-[9px] tracking-[0.5em] uppercase font-['Golden'] text-[#C5A059] mt-1">Handcrafted Excellence</p>
